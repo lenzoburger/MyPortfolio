@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
    declarations: [
@@ -21,7 +23,9 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
       BrowserModule,
       AppRoutingModule,
       AppRoutes,
-      FontAwesomeModule
+      FontAwesomeModule,
+      BrowserAnimationsModule,
+      CollapseModule.forRoot()
    ],
    providers: [],
    bootstrap: [

@@ -5,17 +5,15 @@
       <h1 id="title">Lencho Burka</h1>
       <p id="subHeading">Software Engineer</p>
       <div class="landingButtons">
-        <a href="#myWork" class="btn animated slideInLeft" id="projectBtn">
-          View Projects
-        </a>
-        <a href="../../assets/resume/LBurkaCV.pdf" class="btn animated slideInRight" id="resumeBtn">
-          View Resume
-        </a>
+        <button type="button" class="btn btn-primary slideInLeft animated" id="projectBtn">View Projects
+        </button>
+        <button href="../../assets/resume/LBurkaCV.pdf" type="button" class="btn btn-primary slideInRight animated" id="resumeBtn">View Resume
+          </button>
       </div>
       <ul class="icons">
         <a href="https://github.com/lenzoburger" target="_blank">
           <li class="contactIcon animated bounceInDown" id="githubLink">
-              <fa-icon [icon]="['fab', 'github']"></fa-icon>
+            <fa-icon [icon]="['fab', 'github']"></fa-icon>
           </li>
         </a>
         <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank">
@@ -25,10 +23,20 @@
         </a>
         <a href="mailto:lenzoburger@gmail.com">
           <li class="contactIcon animated bounceInDown" id="emailLink">
-              <fa-icon [icon]="['far', 'envelope']"></fa-icon>
+            <fa-icon [icon]="['far', 'envelope']"></fa-icon>
           </li>
         </a>
       </ul>
+
     </header>
+
+    <!-- <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
+    </button>
+    <hr>
+    <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+      <div class="well well-lg card card-block card-header">Some content</div>
+    </div> -->
+
   </div>
 </section>
