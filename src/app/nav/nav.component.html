@@ -1,20 +1,35 @@
-  <!--*** NAVIGATION ***-->
-  <nav>
-    <div class="logo">
-      <a href="#">
-        <h4>Lencho Burka</h4>
-      </a>
-    </div>
-    <ul class="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#myWork">Projects</a></li>
-      <li><a href="#aboutMe">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="/LBurkaCV.pdf" target="_blank">Resume</a></li>
+<!--*** NAVIGATION ***-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand" [routerLink]="['/home']">
+    <img src="../../assets/images/favicons/favicon-32x32.png" width="32" height="32" class="d-inline-block align-top"
+      alt="">
+    Lencho Burka
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" (click)="clickedInside($event)"
+  aria-controls="navbarNav" [attr.aria-expanded]="!isCollapsed"
+  aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+  <div class="navbar-collapse"  id="navbarNav" [collapse]="isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/projects']">Projects</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../../assets/resume/LBurkaCV.pdf" target="_blank">Resume</a>
+      </li>
     </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+  </div>
+</nav>

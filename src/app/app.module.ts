@@ -12,12 +12,16 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       HomeComponent,
-      NavComponent
+      NavComponent,
+      ProjectsComponent,
+      ContactComponent
    ],
    imports: [
       BrowserModule,
