@@ -7,8 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ##Build and deploy to Github-Pages
-1. Build project: `g build --prod --base-href "https://github.com/lenzoburger/MyPortfolio/"`
-2. Deploy: `npx ngh --dir=dist/MyPortfolio`
+1. Build project: `ng build --prod --base-href "https://lenzoburger.github.io/MyPortfolio/"`
+2. Deploy: `npx ngh --dir=dist/MyPortfolio --message="Auto latest changes"`
+3. View: https://lenzoburger.github.io/lenzoburger/
 
 ## Code scaffolding
 
