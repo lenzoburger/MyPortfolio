@@ -38,8 +38,8 @@ app-nav {
   display: grid;
   grid-template-rows: 1fr;
 
-  height: 85vh;
-  background: url("/assets/images/background.jpg") no-repeat center center/cover;
+  height: 80vh;
+  background: url("assets/images/background.jpg") no-repeat center center/cover;
   border-bottom: 6px solid var(--gold);
 }
 

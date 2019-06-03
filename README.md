@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ##Build and deploy to Github-Pages
 1. Build project: `ng build --prod --base-href "https://lenzoburger.github.io/MyPortfolio/"`
-2. Deploy: `npx ngh --dir=dist/MyPortfolio --message="Auto latest changes"`
+2. Deploy: `npx ngh --dir=dist/MyPortfolio --message="Auto commit & deploy"`
 3. View: https://lenzoburger.github.io/lenzoburger/
 
 ## Code scaffolding
