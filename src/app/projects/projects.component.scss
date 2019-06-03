@@ -1,19 +1,71 @@
-:host {
-  height: 90vh;
-  background: url("../../assets/images/background.jpg") no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  border-bottom: 6px solid var(--gold);
-}
 
-#projectsOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*** MY WORK SECTION / PROJECT CARDS ***/
+
+// #cardGrid {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+// }
+
+// .cardContainer {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .card {
+//   width: 300px;
+//   margin-bottom: 30px;
+// }
+
+// .cardTitle {
+//   font-size: 1.5rem;
+// }
+
+// .cardBody {
+//   padding: 6px;
+//   width: 100%;
+//   border: 2px solid var(--light-grey);
+// }
+
+// .projectImageWrapper {
+//   width: 300px;
+//   height: 300px;
+// }
+
+// .screenshot {
+//   height: 100%;
+//   width: 100%;
+// }
+
+// .cardTitle {
+//   text-align: center;
+//   font-weight: bold;
+//   margin: 10px;
+// }
+
+// .buttonWrapper {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin-bottom: 15px;
+//   margin-top: 15px;
+// }
+
+// .buttonWrapper .btn {
+//   margin: 0.5rem;
+// }
+
+// .description {
+//   margin-bottom: 15px;
+// }
+
+// .skillsList {
+//   margin-top: 5px;
+//   list-style: none;
+// }
+
+// .skillsList li{
+//   border: 1px solid var(--background);
+//   padding: 12px;
+//   background-color: var(--light-grey);
+// }
