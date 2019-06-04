@@ -23,22 +23,19 @@ body {
 
 app-root {
   display: grid;
-  grid-template-areas:
-    " navbar    "
-    " main   "
-    " footer ";
+  grid-template-rows: minmax(58px, auto) minmax(85vh, auto) minmax(20px, auto);
+
 }
 
 app-nav {
-  grid-area: navbar;
+  grid-area: 1 / 1;
 }
 
 #background {
-  grid-area: main;
+  grid-area: 2 / 1;
   display: grid;
   grid-template-rows: 1fr;
 
-  height: 80vh;
   background: url("assets/images/background.jpg") no-repeat center center/cover;
   border-bottom: 6px solid var(--gold);
 }
@@ -50,7 +47,7 @@ router-outlet + * {
 }
 
 footer {
-  grid-area: footer;
+  grid-area: 3 / 1;
 }
 
 
