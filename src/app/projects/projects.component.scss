@@ -14,20 +14,70 @@
 #cardsContainer {
   grid-area: 2 / 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(400px, auto);
+  grid-gap: 20px;
+  place-items: center;
+
   min-height: 100%;
   width: 90%;
   padding-top: 20px;
   padding-bottom: 20px;
-  place-items: center;
-  grid-gap: 20px;
 }
 
 .card {
   min-width: 300px;
-  min-height: 400px;
+  height: 100%;
+  background-color: var(--background);
+  color: var(--offWhite);
+  border: 2px solid var(--light-grey);
+  font-family: 'Oxygen Mono', monospace, Arial, Helvetica, sans-serif;
 }
+
+.screenshot {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
+.cardBody {
+  padding: 6px;
+  width: 100%;
+}
+
+.description {
+  margin: 5px;
+}
+
+.techHeading {
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.skillsList {
+  padding: 0px;
+  margin: 5px;
+  list-style: none;
+}
+
+.skillsList li{
+  border: 1px solid var(--background);
+  padding: 12px;
+  background-color: var(--light-grey);
+  width: 100%;
+}
+
 
 /*** MY WORK SECTION / PROJECT CARDS ***/
 
