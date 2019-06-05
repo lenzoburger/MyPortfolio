@@ -1,30 +1,27 @@
-[{
-    "title": "Elephant Resort",
-    "description": "Site for booking hotel rooms and booking management",
+[
+  {
+    "title": "Genetic Algorithm Project",
+    "description": "Genetic Algorithms",
 
     "projectImage": {
-      "src": "assets/images/elephantResort.png",
-      "alt": "Eelphant Resort project screenshot"
+      "src": "assets/images/blank.png",
+      "alt": "Genetic Algorithm project screenshot"
     },
 
     "projectPreview": {
-      "description": "Live Preview",
-      "url": "http://elephantresort.ap-southeast-2.elasticbeanstalk.com/"
+      "description": "Preview",
+      "url": "assets/images/blank.png"
     },
 
     "projectSourceCode": {
       "description": "View on Github",
-      "url": "https://github.com/lenzoburger/ElephantResort"
+      "url": "https://github.com/lenzoburger"
     },
 
     "skills": [
-        "Amazon Web Services (AWS)",
-        "Linux",
-        "Apache",
-        "Mysql",
-        "Php",
-        "Javascript, JQuery",
-        "HTML, CSS, XML"
+        "JAVA",
+        "Machine Learning",
+        "Genetic Algorithms"
     ]
   }
 ]
