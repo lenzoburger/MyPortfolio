@@ -1,68 +1,54 @@
-
 :host {
-  height: 90vh;
-  background: url("../../assets/images/background.jpg") no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  border-bottom: 6px solid var(--gold);
-}
-
-#homeOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#title, #subHeading  {
-  margin: 20px;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
 
-#title {
+#homeContainer {
+  display: grid;
+  grid-template-areas:
+    " myName    myName  "
+    " myRole    myRole  "
+    " projects  resume  "
+    " contact   contact ";
+  column-gap: 5px;
+  place-items: center;
+  text-align: center;
+}
+
+#myName {
+  grid-area: myName;
   font-size: 3.5em;
 }
 
-#subHeading {
+#myRole {
+  grid-area: myRole;
   font-size: 2.5em;
+  margin-top: 20px;
   margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.homeButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
 }
 
 #projectBtn {
-  margin-right: 25px;
+  grid-area: projects;
   font-size: 1.3em;
 }
 
 #resumeBtn {
+  grid-area: resume;
   font-size: 1.3em;
 }
 
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  margin: 40px 0 40px 0;
+#iconsContainer {
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.icons a {
-  text-decoration: none;
-}
-
-.contactIcon  {
+.contactIcon {
   font-size: 1.7em;
   border-radius: 50%;
   padding: 0.5em;
@@ -74,7 +60,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in;
-  animation-duration: 1.6s;
+  animation-duration: 1.8s;
 }
 
 .contactIcon:hover {
@@ -82,37 +68,29 @@
   border: 2px solid #007bff;
 }
 
-#githubLink fa-icon{
+#githubLink {
+  grid-area: 1 / 1;
+  animation-fill-mode: both;
+}
+
+#githubLink fa-icon {
   color: rgb(102, 43, 129);
 }
 
 #linkedInLink {
-  animation-delay: .2s;
+  grid-area: 1 / 2;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
 }
-#linkedInLink fa-icon{
+#linkedInLink fa-icon {
   color: rgb(0, 127, 178);
 }
 
 #emailLink {
-  animation-delay: .4s;
+  grid-area: 1 / 3;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
 }
-#emailLink fa-icon{
+#emailLink fa-icon {
   color: #f58880;
-}
-
-.btn {
-  background: var(--secondary-grey);
-  border: 2px solid var(--offWhite);
-  color: var(--offWhite);
-  padding: 0.5em;
-  font-size: 1em;
-  border-radius: 5px;
-  transition: 0.2s ease-in;
-  animation-duration: 1.6s;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: var(--hover);
-  border: 2px solid #007bff;
 }

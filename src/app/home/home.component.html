@@ -1,32 +1,23 @@
-<section id="homeOverlay">
-    <header>
-      <h1 id="title">Lencho Burka</h1>
-      <p id="subHeading">Software Engineer</p>
-      <div class="homeButtons">
-          <a class="btn btn-primary slideInLeft animated" id="projectBtn"  [routerLink]="['/projects']">View Projects</a>
-          <a class="btn btn-primary slideInRight animated" id="resumeBtn" href="../../assets/resume/LBurkaCV.pdf" target="_blank">View Resume</a>
-      </div>
-      <ul class="icons">
+<div id="homeContainer">
+  <h1 id="myName">Lencho Burka</h1>
+  <p id="myRole">Software Engineer</p>
+  <a class="btn btn-primary slideInLeft" id="projectBtn" [routerLink]="['/projects']">View Projects</a>
+  <a class="btn btn-primary slideInRight" id="resumeBtn" href="assets/resume/LBurkaCV.pdf" target="_blank">View
+    Resume</a>
 
-        <li class="contactIcon animated bounceInDown" id="githubLink">
-          <a href="https://github.com/lenzoburger" target="_blank">
-            <fa-icon [icon]="['fab', 'github']"></fa-icon>
-          </a>
-        </li>
+  <div id="iconsContainer">
+    <a href="https://github.com/lenzoburger" class="contactIcon bounceInDown" id="githubLink" target="_blank">
+      <fa-icon [icon]="['fab', 'github']"></fa-icon>
+    </a>
 
-        <li class="contactIcon animated bounceInDown" id="linkedInLink">
-          <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank">
-            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
-          </a>
-        </li>
+    <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank" class="contactIcon bounceInDown"
+      id="linkedInLink">
+      <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+    </a>
 
-        <li class="contactIcon animated bounceInDown" id="emailLink">
-          <a href="mailto:lenzoburger@gmail.com">
-            <fa-icon [icon]="['far', 'envelope']"></fa-icon>
-          </a>
-        </li>
+    <a href="mailto:lenzoburger@gmail.com" class="contactIcon bounceInDown" id="emailLink">
+      <fa-icon [icon]="['far', 'envelope']"></fa-icon>
+    </a>
+  </div>
 
-      </ul>
-
-    </header>
-</section>
+</div>

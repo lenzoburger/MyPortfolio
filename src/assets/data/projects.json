@@ -1,0 +1,117 @@
+[
+  {
+    "title": "Elephant Resort",
+    "description": "Site for booking hotel rooms and booking management",
+
+    "projectImage": {
+      "src": "assets/images/elephantResort.png",
+      "alt": "Eelphant Resort project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Live Preview",
+      "url": "http://elephantresort.ap-southeast-2.elasticbeanstalk.com/"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/ElephantResort"
+    },
+
+    "skills": [
+        "Amazon Web Services (AWS)",
+        "Linux",
+        "Apache",
+        "Mysql",
+        "Php",
+        "Javascript, JQuery",
+        "HTML, CSS, XML"
+    ]
+  },
+
+  {
+    "title": "Ethio Trade",
+    "description": "Web application for buying and selling goods",
+
+    "projectImage": {
+      "src": "assets/images/EthioTrade.png",
+      "alt": "Ethio Trade project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/EthioTrade.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/EthioTrade"
+    },
+
+    "skills": [
+        "ASP.NET Core 2+",
+        "Angular 7",
+        "Entity Framework Core",
+        "SQLite",
+        "Cloudinary- Cloud Photo Storage",
+        "Node.js",
+        "HTML, CSS, Bootstrap"
+    ]
+  },
+  {
+    "title": "Search Engine Automation",
+    "description": "Automated Testing of different search engines with custom built selenium c# framework",
+
+    "projectImage": {
+      "src": "assets/images/searchEngineAutomation.png",
+      "alt": "Search Engine Automation project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/searchEngineAutomation.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/SearchEngineAutomation"
+    },
+
+    "skills": [
+        ".NET Framework",
+        "C#",
+        "Selenium",
+        "Batch",
+        "MSTest Unit Test Framework",
+        "JSON, CSV"
+    ]
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "Personal portfolio of previous & current projects",
+
+    "projectImage": {
+      "src": "assets/images/personalPortfolio.png",
+      "alt": "Personal Portfolio project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Live Preview",
+      "url": "https://lenzoburger.github.io/MyPortfolio/"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/MyPortfolio"
+    },
+
+    "skills": [
+        "Angular 8",
+        "Node.Js",
+        "HTML, SASS/SCSS",
+        "CSS Grid, Bootstrap 4",
+        "JSON",
+        "Github Pages"
+    ]
+  }
+]
