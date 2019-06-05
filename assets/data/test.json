@@ -1,0 +1,30 @@
+[{
+    "title": "Elephant Resort",
+    "description": "Site for booking hotel rooms and booking management",
+
+    "projectImage": {
+      "src": "assets/images/elephantResort.png",
+      "alt": "Eelphant Resort project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Live Preview",
+      "url": "http://elephantresort.ap-southeast-2.elasticbeanstalk.com/"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/ElephantResort"
+    },
+
+    "skills": [
+        "Amazon Web Services (AWS)",
+        "Linux",
+        "Apache",
+        "Mysql",
+        "Php",
+        "Javascript, JQuery",
+        "HTML, CSS, XML"
+    ]
+  }
+]
