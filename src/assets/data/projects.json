@@ -60,16 +60,16 @@
   },
   {
     "title": "Search Engine Automation",
-    "description": "Automated Testing of different search engines",
+    "description": "Automated Testing of different search engines with custom built selenium c# framework",
 
     "projectImage": {
-      "src": "assets/images/blank.png",
+      "src": "assets/images/searchEngineAutomation.png",
       "alt": "Search Engine Automation project screenshot"
     },
 
     "projectPreview": {
       "description": "Preview",
-      "url": "assets/images/blank.png"
+      "url": "assets/images/searchEngineAutomation.png"
     },
 
     "projectSourceCode": {
@@ -88,10 +88,10 @@
   },
   {
     "title": "Personal Portfolio",
-    "description": "Personal Portfolio to display projects",
+    "description": "Personal portfolio of previous & current projects",
 
     "projectImage": {
-      "src": "assets/images/blank.png",
+      "src": "assets/images/personalPortfolio.png",
       "alt": "Personal Portfolio project screenshot"
     },
 
@@ -108,36 +108,10 @@
     "skills": [
         "Angular 8",
         "Node.Js",
-        "HTML",
-        "SASS/SCSS",
+        "HTML, SASS/SCSS",
         "CSS Grid, Bootstrap 4",
         "JSON",
         "Github Pages"
-    ]
-  },
-  {
-    "title": "Genetic Algorithm Project",
-    "description": "Genetic Algorithms",
-
-    "projectImage": {
-      "src": "assets/images/blank.png",
-      "alt": "Genetic Algorithm project screenshot"
-    },
-
-    "projectPreview": {
-      "description": "Preview",
-      "url": "assets/images/blank.png"
-    },
-
-    "projectSourceCode": {
-      "description": "View on Github",
-      "url": "https://github.com/lenzoburger"
-    },
-
-    "skills": [
-        "JAVA",
-        "Machine Learning",
-        "Genetic Algorithms"
     ]
   }
 ]
