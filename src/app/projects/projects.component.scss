@@ -1,9 +1,10 @@
 :host {
   display: grid;
-  grid-template-rows: 56px auto;
+  grid-template-rows: minmax(56px, auto) auto;
   place-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
+  grid-row-gap: 30px;
 }
 
 #projectsHeading {
@@ -25,14 +26,13 @@
   padding-bottom: 20px;
 }
 
-
 .card {
   min-width: 300px;
   height: 100%;
   background-color: var(--background);
   color: var(--offWhite);
   border: 2px solid var(--light-grey);
-  font-family: 'Oxygen Mono', monospace, Arial, Helvetica, sans-serif;
+  font-family: "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
 }
 
 .screenshot {
@@ -55,7 +55,7 @@
   margin-top: 15px;
 }
 
-.btn {
+.button {
   margin: 0.5rem;
 }
 
@@ -78,83 +78,10 @@
   padding: 0px;
   margin: 5px;
   list-style: none;
+  li {
+    border: 1px solid var(--background);
+    padding: 12px;
+    background-color: var(--light-grey);
+    width: 100%;
+  }
 }
-
-.skillsList li{
-  border: 1px solid var(--background);
-  padding: 12px;
-  background-color: var(--light-grey);
-  width: 100%;
-}
-
-
-/*** MY WORK SECTION / PROJECT CARDS ***/
-
-// #cardGrid {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-// }
-
-// .cardContainer {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .card {
-//   width: 300px;
-//   margin-bottom: 30px;
-// }
-
-// .cardTitle {
-//   font-size: 1.5rem;
-// }
-
-// .cardBody {
-//   padding: 6px;
-//   width: 100%;
-//   border: 2px solid var(--light-grey);
-// }
-
-// .projectImageWrapper {
-//   width: 300px;
-//   height: 300px;
-// }
-
-// .screenshot {
-//   height: 100%;
-//   width: 100%;
-// }
-
-// .cardTitle {
-//   text-align: center;
-//   font-weight: bold;
-//   margin: 10px;
-// }
-
-// .buttonWrapper {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   margin-bottom: 15px;
-//   margin-top: 15px;
-// }
-
-// .buttonWrapper .btn {
-//   margin: 0.5rem;
-// }
-
-// .description {
-//   margin-bottom: 15px;
-// }
-
-// .skillsList {
-//   margin-top: 5px;
-//   list-style: none;
-// }
-
-// .skillsList li{
-//   border: 1px solid var(--background);
-//   padding: 12px;
-//   background-color: var(--light-grey);
-// }
