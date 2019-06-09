@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectService } from './_services/project.service';
 import { AlertifyService } from './_services/alertify.service';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { PreventUnsavedChanges } from './_gaurds/prevent-unsaved-changes.guard';
 
 @NgModule({
    declarations: [
@@ -42,7 +43,8 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
    ],
    providers: [
       AlertifyService,
-      ProjectService
+      ProjectService,
+      PreventUnsavedChanges
    ],
    bootstrap: [
       AppComponent

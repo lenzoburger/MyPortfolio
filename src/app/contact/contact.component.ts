@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AlertifyService } from '../_services/alertify.service';
 import { HttpClient } from '@angular/common/http';
@@ -12,9 +12,14 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
   formApi = 'https://getsimpleform.com/messages?';
   formApiToken = 'form_api_token=eac98a47b2c53f674a58b358e3c4b3f4';
-  baseUrl = 'http://localhost:4200';
-  formRedirectRoute = '/thankYou';
+
   contactForm: FormGroup;
+  @HostListener('window:beforeunload', ['$event'])
+  unloadNotification($event: any) {
+    if (this.contactForm.dirty) {
+      $event.returnValue = true;
+    }
+  }
 
   constructor(private fb: FormBuilder, private alertify: AlertifyService, private http: HttpClient, private router: Router) { }
 
@@ -44,6 +49,7 @@ export class ContactComponent implements OnInit {
         (res) => {
           this.alertify.success('Your Submission Has Been Sent!');
           console.log('Sucess: ' + res);
+          this.contactForm.reset();
           this.router.navigate(['/thankYou']);
         },
         (err) => {
