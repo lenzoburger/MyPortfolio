@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +18,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectService } from './_services/project.service';
 import { AlertifyService } from './_services/alertify.service';
+import { ThankYouComponent } from './thank-you/thank-you.component';
+import { PreventUnsavedChanges } from './_gaurds/prevent-unsaved-changes.guard';
 
 @NgModule({
    declarations: [
@@ -24,20 +27,24 @@ import { AlertifyService } from './_services/alertify.service';
       HomeComponent,
       NavComponent,
       ProjectsComponent,
-      ContactComponent
+      ContactComponent,
+      ThankYouComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       AppRoutes,
       HttpClientModule,
+      FormsModule,
+      ReactiveFormsModule,
       FontAwesomeModule,
       BrowserAnimationsModule,
       CollapseModule.forRoot()
    ],
    providers: [
       AlertifyService,
-      ProjectService
+      ProjectService,
+      PreventUnsavedChanges
    ],
    bootstrap: [
       AppComponent

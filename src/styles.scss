@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /*** FONTS IMPORTS ***/
-@import '../node_modules/alertifyjs/build/css/alertify.min.css';
-@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono');
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../node_modules/animate.css/animate.min.css';
-
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono");
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/animate.css/animate.min.css";
 
 /*** VARIABLES / COLORS ***/
 :root {
@@ -20,13 +19,12 @@
 
 body {
   color: var(--offWhite);
-  font-family: 'Oxygen Mono', monospace, Arial, Helvetica, sans-serif;
+  font-family: "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
 }
 
 app-root {
   display: grid;
   grid-template-rows: minmax(58px, auto) minmax(85vh, auto) minmax(20px, auto);
-
 }
 
 app-nav {
@@ -52,7 +50,7 @@ footer {
   grid-area: 3 / 1;
 }
 
-.btn {
+.button {
   background: var(--secondary-grey);
   border: 2px solid var(--offWhite);
   color: var(--offWhite);
@@ -65,269 +63,58 @@ footer {
   animation-fill-mode: both;
 }
 
-.btn:hover {
+.button:hover {
   background-color: var(--hover);
   border: 2px solid #007bff;
   color: var(--offWhite);
 }
 
+#iconsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  #githubLink {
+    grid-area: 1 / 1;
+    animation-fill-mode: both;
+    fa-icon {
+      color: rgb(102, 43, 129);
+    }
+  }
 
+  #linkedInLink {
+    grid-area: 1 / 2;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    fa-icon {
+      color: rgb(0, 127, 178);
+    }
+  }
 
+  #emailLink {
+    grid-area: 1 / 3;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIHN0eWxlPSIgZmlsbDojRTBFMEUwOyIgZD0iTSA1LjUgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDcuNSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjA2NjQwNiAyIDExIEwgMiAzNyBDIDIgMzguOTMzNTk0IDMuNTY2NDA2IDQwLjUgNS41IDQwLjUgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0Q5RDlEOTsiIGQ9Ik0gMjYgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDcuNSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjA2NjQwNiAyIDExIFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiNFRUVFRUU7IiBkPSJNIDYuNzQ2MDk0IDQwLjUgTCA0Mi41IDQwLjUgQyA0NC40MzM1OTQgNDAuNSA0NiAzOC45MzM1OTQgNDYgMzcgTCA0NiAxMS41IFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiNFMEUwRTA7IiBkPSJNIDI1Ljc0NjA5NCA0MC41IEwgNDIuNSA0MC41IEMgNDQuNDMzNTk0IDQwLjUgNDYgMzguOTMzNTk0IDQ2IDM3IEwgNDYgMTEuNSBMIDE4Ljc2OTUzMSAzMS42MTcxODggWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0NBMzczNzsiIGQ9Ik0gNDIuNSA5LjUgTCA1LjUgOS41IEMgMy41NjY0MDYgOS41IDIgOS4wNjY0MDYgMiAxMSBMIDIgMzcgQyAyIDM4LjkzMzU5NCAzLjU2NjQwNiA0MC41IDUuNSA0MC41IEwgNyA0MC41IEwgNyAxMiBMIDQxIDEyIEwgNDEgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDkuNSA0Mi41IDkuNSBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojRjVGNUY1OyIgZD0iTSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjAzNTE1NiAyIDExIEMgMiAxMi4yMDcwMzEgMy41MTk1MzEgMTMuMjU3ODEzIDMuNTE5NTMxIDEzLjI1NzgxMyBMIDI0IDI3Ljc1NzgxMyBMIDQ0LjQ4MDQ2OSAxMy4yNTc4MTMgQyA0NC40ODA0NjkgMTMuMjU3ODEzIDQ2IDEyLjIwNzAzMSA0NiAxMSBDIDQ2IDkuMDM1MTU2IDQ0LjQzMzU5NCA3LjUgNDIuNSA3LjUgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0U4NEY0QjsiIGQ9Ik0gNDMuMjQ2MDk0IDcuNTgyMDMxIEwgMjQgMjEgTCA0Ljc1MzkwNiA3LjU4MjAzMSBDIDMuMTc5Njg4IDcuOTE3OTY5IDIgOS4yOTY4NzUgMiAxMSBDIDIgMTIuMjA3MDMxIDMuNTE5NTMxIDEzLjI1NzgxMyAzLjUxOTUzMSAxMy4yNTc4MTMgTCAyNCAyNy43NTc4MTMgTCA0NC40ODA0NjkgMTMuMjU3ODEzIEMgNDQuNDgwNDY5IDEzLjI1NzgxMyA0NiAxMi4yMDcwMzEgNDYgMTEgQyA0NiA5LjI5Njg3NSA0NC44MjAzMTMgNy45MTc5NjkgNDMuMjQ2MDk0IDcuNTgyMDMxIFogIj48L3BhdGg+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 65%;
+  }
+}
 
+.contactIcon {
+  font-size: 1.7em;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: var(--secondary-grey);
+  border: 2px solid var(--offWhite);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+  animation-duration: 1.8s;
+}
 
-
-
-
-
-/*** MAIN STYLES ***/
-// .animated {
-//   -webkit-animation-duration:1s;
-//   animation-duration:1s;
-//   -webkit-animation-fill-mode:none!important;
-//   animation-fill-mode:none!important
-// }
-
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// a {
-//   text-decoration: none;
-// }
-
-
-// #pageContainer {
-//   padding: 5em;
-//   padding-top: 0;
-// }
-
-// .sectionHeading {
-//   font-size: 3em;
-//   margin: 50px;
-//   font-weight: normal;
-//   text-align: center;
-// }
-
-// .sectionInfo {
-//   font-size: 1.4em;
-// }
-
-//*** CONTACT SECTION ***/
-// form {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin: 2rem auto;
-// }
-
-// label {
-//   display: block;
-//   font-size: 1.5rem;
-//   margin: 0.7rem 0;
-// }
-
-// input,
-// textarea {
-//   padding: 0.5rem;
-//   font-size: 1.2rem;
-//   width: 50vw;
-//   margin-bottom: 1.2rem;
-//   border-radius: 5px;
-// }
-
-// #formSubmit {
-//   margin-top: 1rem;
-//   width: auto;
-//   font-size: 1.3rem;
-//   padding: 1rem 3rem;
-// }
-
-// /***** THANKS PAGE *****/
-// .thanksPage {
-//   height: 100vh;
-//   width: 100vw;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   text-align: center;
-// }
-
-// .thanksPage h2 {
-//   font-size: 2.5rem;
-//   margin: 1rem;
-// }
-
-// .thanksPage p {
-//   font-size: 2rem;
-//   margin: 1rem;
-// }
-
-// .thanksPage .btn {
-//   font-size: 1.5rem;
-//   margin: 1rem;
-// }
-
-// /***** MEDIA QUERIES *****/
-// @media screen and (max-width: 1140px) {
-//   #cardGrid {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-
-// @media screen and (max-width: 1024px) {
-//   .logo {
-//     font-size: 1em;
-//   }
-
-//   .navLinks {
-//     width: 60%;
-//   }
-// }
-
-// @media screen and (max-width: 825px) {
-//   #pageContainer {
-//     padding: 2em;
-//   }
-
-//   #cardGrid {
-//     grid-template-columns: repeat(1, 1fr);
-//   }
-// }
-
-// @media screen and (max-width: 800px) {
-//   body {
-//     overflow-x: hidden;
-//   }
-
-//   .navLinks {
-//     position: absolute;
-//     right: 0px;
-//     height: 92vh;
-//     top: 8vh;
-//     background-color: var(--main-grey);
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 50%;
-//     transform: translateX(100%);
-//     transition: transform 0.5s ease-in;
-//   }
-
-//   .navLinks li {
-//     opacity: 0;
-//     border-bottom: 2px solid var(--light-grey);
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .navLinks li a {
-//     height: 100%;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .burger {
-//     display: block;
-//     cursor: pointer;
-//   }
-// }
-
-// @media screen and (max-width: 768px) {
-//   #landing {
-//     height: 100vh;
-//   }
-
-//   .landingButtons {
-//     flex-flow: column;
-//   }
-//   #projectBtn {
-//     margin: 0;
-//     margin-bottom: 20px;
-//   }
-// }
-
-// @media screen and (max-width: 500px) {
-//   #title {
-//     font-size: 2.5em;
-//   }
-
-//   #subHeading {
-//     font-size: 2em;
-//   }
-
-//   .sectionHeading {
-//     font-size: 2em;
-//   }
-
-//   .sectionInfo {
-//     font-size: 1em;
-//   }
-
-//   .buttonWrapper {
-//     flex-direction: column;
-//   }
-
-//   .buttonWrapper .btn{
-//     margin-bottom: 1rem;
-//   }
-
-//   input,
-//   textarea {
-//     width: 80vw;
-//   }
-
-//   .thanksPage h2 {
-//     font-size: 2rem;
-//   }
-
-//   .thanksPage p {
-//     font-size: 1.5rem;
-//   }
-
-//   .thanksPage .btn {
-//     font-size: 1.2rem;
-//   }
-// }
-
-// @media screen and (max-width: 400px) {
-//   .card, .projectImageWrapper {
-//     width: 275px;
-//   }
-
-//   .contactIcon {
-//     font-size: 1.4em;
-//     height: 50px;
-//     width: 50px;
-//   }
-
-//   button {
-//     font-size: 0.9em;
-//   }
-// }
-
-// @media screen and (max-height: 700px) {
-//   #landing {
-//     height: 100vh;
-//   }
-// }
-
-
-// /***** KEYFRAMES / ANIMATIONS *****/
-// @keyframes navLinkFade {
-//   from {
-//     opacity: 0;
-//     transform: translateX(50px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateX(0px);
-//   }
-// }
+.contactIcon:hover {
+  background-color: var(--hover);
+  border: 2px solid #007bff;
+}
