@@ -9,7 +9,7 @@
     },
 
     "projectPreview": {
-      "description": "Live Preview",
+      "description": "View",
       "url": "http://elephantresort.ap-southeast-2.elasticbeanstalk.com/"
     },
 
@@ -96,7 +96,7 @@
     },
 
     "projectPreview": {
-      "description": "Live Preview",
+      "description": "View",
       "url": "https://lenzoburger.github.io/MyPortfolio/"
     },
 
