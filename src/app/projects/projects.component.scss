@@ -40,38 +40,42 @@
   object-fit: cover;
 }
 
+.cardBody {
+  padding: 6px;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: minmax(72px, auto) 60px auto auto auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
 .cardTitle {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
-  margin: 10px;
+  margin: 0px;
 }
 
 .buttonWrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .button {
   margin: 0.5rem;
-}
-
-.cardBody {
-  padding: 6px;
-  width: 100%;
+  min-width: 87px;
 }
 
 .description {
-  margin: 5px;
+  margin: 0px;
+  margin-left: 5px;
 }
 
 .techHeading {
+  margin: 0px;
   margin-left: 5px;
-  margin-top: 15px;
-  margin-bottom: 0px;
 }
 
 .skillsList {
