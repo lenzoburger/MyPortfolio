@@ -15,7 +15,7 @@ Personal Portfolio [Website](https://lenzoburger.github.io/MyPortfolio/home) - A
 3. Change directory `cd MyPortfolio`
 4. Restore app dependencies/_node-modules_ `npm install`
 5. Run app: `ng serve --open`
-6. Default browser should automatically launch at URL `http://localhost:4200/`
+6. Default browser should automatically launch at URL http://localhost:4200/
 
 ### Build & Deploy
 _**Auto Commit & Deploy**_
