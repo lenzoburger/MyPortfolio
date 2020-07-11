@@ -7,10 +7,7 @@
 			"problemMatcher": [
 				"$eslint-stylish"
 			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"label": "npm: build",
 			"detail": "ng build"
 		},
@@ -19,7 +16,11 @@
 			"script": "start",
 			"problemMatcher": [],
 			"label": "npm: start",
-			"detail": "ng serve"
+			"detail": "ng serve",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		},
 		{
 			"type": "npm",
