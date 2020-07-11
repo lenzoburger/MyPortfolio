@@ -1,5 +1,33 @@
 [
   {
+    "title": "Landmark Remark",
+    "description": "Web-App for placing location marker notes on google maps",
+
+    "projectImage": {
+      "src": "assets/images/landmarkRemark16x9.png",
+      "alt": "Landmark Remark project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/landmarkRemark.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/landmark-remark-webApp"
+    },
+
+    "skills": [
+        "ASP.NET Core 2.2",
+        "Angular 7",
+        "Entity Framework Core",
+        "SQLite",
+        "HTML, CSS, Bootstrap",
+        "Angular Google Maps(Agm)"
+    ]
+  },
+  {
     "title": "Elephant Resort",
     "description": "Site for booking hotel rooms and booking management",
 
@@ -62,7 +90,7 @@
 
   {
     "title": "Search Engine Automation",
-    "description": "Automated Testing of search engines with custom selenium c# framework.",
+    "description": "Automated Testing of search engines with custom made selenium c# framework.",
 
     "projectImage": {
       "src": "assets/images/searchEngineAutomation16_9.png",
